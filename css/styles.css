@@ -1,29 +1,36 @@
 :root {
-  --primary-font: 'Roboto', sans-serif;
-  --secondary-font: 'Raleway', sans-serif;
+  --primary-font-family: 'Roboto', sans-serif;
+  --secondary-font-family: 'Raleway', sans-serif;
   --logo-accent-color: #000000;
   --primary-accent-color: #2196f3;
   --primary-background-color: #2f303a;
-  --primary-white: #fff;
+  --primary-white: #ffffff;
+  --secondary-white: rgba(255, 255, 255, 0.6);
   --primary-dark-color: #212121;
   --text-color: #757575;
 }
+
 body {
-  font-family: var(--primary-font);
+  font-family: var(--primary-font-family);
   font-weight: 400;
   font-size: 14px;
+  color: var(--text-color);
 }
 
+a {
+  text-decoration: none;
+}
+
+/* ===== HEADER ===== */
 .page-header {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
 .logo {
-  font-family: var(--secondary-font);
-  font-weight: bold;
+  font-family: var(--secondary-font-family);
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -34,28 +41,16 @@ body {
   color: var(--logo-accent-color);
 }
 
-a {
-  text-decoration: none;
-}
-
-.footer {
-  background-color: var(--primary-background-color);
-}
-
-.footer-logo-accent {
-  color: var(--primary-white);
-}
-
 .nav-link {
   color: var(--primary-dark-color);
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.nav-link .current {
   color: var(--primary-accent-color);
 }
 
-.nav-link .current {
+.nav-link:hover,
+.nav-link:focus {
   color: var(--primary-accent-color);
 }
 
@@ -67,7 +62,30 @@ a {
 .contact-link:focus {
   color: var(--primary-accent-color);
 }
+/* ===== END HEADER ===== */
 
+/* ===== FOOTER ===== */
+.footer {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  background-color: var(--primary-background-color);
+}
+
+.footer-logo-accent {
+  color: var(--primary-white);
+}
+
+.footer-adress {
+  font-style: normal;
+  color: var(--primary-white);
+}
+
+.footer-contact {
+  color: var(--secondary-white);
+}
+/* ===== END FOOTER ===== */
+
+/* ===== HERO ===== */
 .hero {
   background-color: var(--primary-background-color);
 }
@@ -84,14 +102,17 @@ a {
 
 .hero-button {
   font-family: inherit;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--primary-white);
   background-color: var(--primary-accent-color);
+  cursor: pointer;
 }
+/* ===== END HERO ===== */
 
+/* ===== FEATURES ===== */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -99,32 +120,49 @@ a {
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
-.features-title {
-  font-weight: bold;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--primary-dark-color);
-}
-
 .features {
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--text-color);
 }
 
+.features-title {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primary-dark-color);
+}
+/* ===== END FEATURES ===== */
+
 .section-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-dark-color);
 }
+
+/* ===== TEAM SECTION ===== */
+.team {
+  font-size: 16px;
+  letter-spacing: 0.03em;
+}
+
+.team-name {
+  font-weight: 500;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--primary-dark-color);
+}
+
+.team-work {
+  line-height: 0.84;
+  color: var(--text-color);
+}
+/* ===== END TEAM SECTION ===== */
