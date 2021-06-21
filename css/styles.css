@@ -68,30 +68,6 @@ ul {
 }
 /* ===== END HEADER ===== */
 
-/* ===== FOOTER ===== */
-.footer {
-  background-color: var(--primary-background-color);
-}
-
-.address {
-  font-style: normal;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
-
-.footer-logo-accent {
-  color: var(--primary-white);
-}
-
-.footer-location {
-  color: var(--primary-white);
-}
-
-.footer-contact {
-  color: var(--secondary-white);
-}
-/* ===== END FOOTER ===== */
-
 /* ===== HERO ===== */
 .hero {
   background-color: var(--primary-background-color);
@@ -204,3 +180,32 @@ ul {
   color: var(--text-color);
 }
 /* ===== END PORTFOLIO ===== */
+
+/* ===== FOOTER ===== */
+.footer {
+  background-color: var(--primary-background-color);
+}
+
+.address {
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.footer-logo-accent {
+  color: var(--primary-white);
+}
+
+.footer-location {
+  color: var(--primary-white);
+}
+
+.footer-contact {
+  color: var(--secondary-white);
+}
+
+.footer-contact:hover,
+.footer-contact:focus {
+  color: var(--primary-white);
+}
+/* ===== END FOOTER ===== */
